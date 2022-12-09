@@ -7,13 +7,13 @@ const path =require('path')
 const ejs =require('ejs')
 mongoose.set('strictQuery', true);
 
-let public_path = path.join(__dirname, '../public')
+let public_path = path.join(__dirname, '/public')
 app.use(express.static(public_path + '/CSS'))
 app.use(express.static(public_path + '/js'))
 app.use(express.static(public_path + '/tools'))
 
 //dynamiclly pass data using ejs
-let html_path = path.join(__dirname, '../views')
+let html_path = path.join(__dirname, '/views')
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.set('views', html_path);
@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
 
 
 //data base connectionie mongodb
-require('./db/connection')
+require('./src/db/connection')
 
 app.get('/',(req,res)=>{
     res.render('index.html',{msg:''})
