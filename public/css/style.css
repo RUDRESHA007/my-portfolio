@@ -5,11 +5,13 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
 }
 
-*::-webkit-scrollbar {
-    display: none;
-}
+
+
 
 body {
     position: relative;
@@ -662,8 +664,9 @@ input,textarea{
     border-radius: 1rem;
     transition: .5s ease-in-out;
     margin-top: 2REM;
-    font-family: 'Ubuntu', sans-serif;
+    outline: none;
 
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .field BUTTON:HOVER {
