@@ -8,7 +8,7 @@ const ejs =require('ejs')
 mongoose.set('strictQuery', true);
 
 let public_path = path.join(__dirname, '/public')
-app.use(express.static(public_path + '/CSS'))
+app.use(express.static(public_path + '/css'))
 app.use(express.static(public_path + '/js'))
 app.use(express.static(public_path + '/tools'))
 
