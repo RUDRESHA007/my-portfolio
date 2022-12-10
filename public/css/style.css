@@ -845,14 +845,15 @@ p{
     input,textarea,label{
         width: 90%;
     }
-    section h1 {
-        font-size: 1.6REM;
+    .profile h1 {
+        line-height: 2.5rem;
+        font-size: 1.6rem;
     }
     .about-me-section .description BUTTON {
         width: 71%;
     }
     .project-section .projects .project {
-        width:17rem;
+        width:16rem;
     }
     .footer p{
         font-size: .7rem;
