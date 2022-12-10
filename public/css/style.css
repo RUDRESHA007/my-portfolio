@@ -679,7 +679,7 @@ input,textarea{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 3rem;
+    gap: 1rem;
     /* background-color: #5f3bef; */
 }
 .logo {
@@ -845,6 +845,23 @@ p{
     input,textarea,label{
         width: 90%;
     }
+    section h1 {
+        font-size: 1.6REM;
+    }
+    .about-me-section .description BUTTON {
+        width: 71%;
+    }
+    .project-section .projects .project {
+        width:17rem;
+    }
+    .footer p{
+        font-size: .7rem;
+        line-height: 1.1rem;
+    }
+    .footer {
+        gap:1rem;
+    }
+    
 
 
 }
